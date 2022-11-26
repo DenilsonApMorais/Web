@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bentleylogo_200.png" type="image/x-icon">
+    <title>My Page 1.0</title>
+</head>
+<body>
+    <h1>Minha primeira página HTML</h1>
+    <h2>Tecnologia Aprendida: HTML</h2>
+    <p>Foram aprendidos diversas tags.</p>
+    <hr>
+    <p>(<code>< hr></code> para fazer esta linha que divide).</p>
+    <ol>
+        <li> Criação de arquivo padrão.</li>
+        <li> Comandos para títulos e subtitulos.</li>
+        <li> Links diversos para download e direcionar para outras pages.</li>
+        <li> Imagens locais e na web.</li>
+        <li> Listas ordenadas, não ordenadas e de definição.</li>
+        <li> Algumas formatações de texto.</li>
+    </ol>
+
+    <ol>
+        <li><h3>Criar arquivo padrão</h3></li>
+            <p>Para criar um arquivo padrão em html, criamos um novo arquivo atravéz do VSCODE e inicializamos com <strong>"!"</strong> e enter para completar o modelo padrão.</p>
+            <p> Em seguida mudamos o idioma para pt-br e configuramos o title da page na tag head;</p>
+            <br>
+    
+        <li><h3>Criar Títulos </h3></li>
+            <p>Para títulos e subtitulos podemos usar as tags <strong>h1</strong> até <strong>h6</strong>; </p>
+            <p><code>< h1>Título< /h1></code></p>
+            <p><code>< h2>Subtítulo< /h2></code></p>
+            <br>
+    
+        <li><h3>Links externos e internos</h3></li>
+
+        <ul type = "square">
+            <li><h4>Link externo</h4></li>
+                <p>Para configurar links usamos a tag <strong>"a"</strong>. O primeiro parametro é o link desejado, o segundo <strong>target = "_blank"</strong> é para abrir o link em outra aba,
+                    <strong>rel= "external"</strong> é para informar ao mecanismo de buscas que é um link externo
+                    e não pertence ao meu conjunto de paginas. </p>
+                
+                <p>Por exemplo: <code>< a href="https://www.youtube.com/" target="_blank" rel="external">YouTube.com < /a></code></p>
+                <p>Por exemplo: <a href="https://www.youtube.com/" target="_blank" rel="external">YouTube.com</a></p>
+                
+
+            <li><h4>Link interno</h4></li>
+                <p>Podemos notar que a pagina desejada encontra-se na mesma pasta que o arquivo HTML;</p>
+                <p>neste caso usamos rel ="next" para indicar que esta é a proxima pagina depois do meu index.html</p>
+                <p>Por exemplo:<code>< a href="imagens.html" rel="next">Pagina de Imagens< /a></code></p>
+                <p>Por exemplo:<a href="imagens.html" rel="next">Pagina de Imagens</a></p>     
+                <br>
+
+            <li><h4>Link interno em pasta diferente do arquivo.</h4></li>
+                <p>Também podemos ligar a paginas que estão em outras pastas usando: nomepasta/nomearquivo.html</p>
+                <p>neste caso usamos rel ="next" para indicar que esta é a proxima pagina depois do meu index.html</p>
+                <p>Por exemplo:<code>< a href="exemplo/exemplo.html">Link de exemplo< /a></code></p>
+                <p>Por exemplo:<a href="exemplo/exemplo.html">Link de exemplo</a></p>
+                <br>
+
+            <li><h4>Buscador não acessa esste link presente presente na pagina.</h4></li>
+                <p>Podemos também garantir que o buscador não acesse um link presente em nossas paginas de terceiros.</p>
+                <p>Usando rel = "nofollow"</p>
+                <p>Por exemplo: <code>< a href="imagens.html" rel="nofollow">Pagina de imagens< /a></code></p>
+                <p>Por exemplo:<a href="imagens.html" rel="nofollow">Pagina de imagens</a></p>
+
+            <li><h4>Link para donwloads</h4></li>
+                <p>Para fazer donwloads </p>
+                <p>Neste  caso clicamos em cima do link com a tecla direita e salvar link como..</p>
+                <p>Por exemplo: <code>< a href="exemplo/meu livro.pdf"download = "meulivro.pdf" type="aplication/pdf" >My Book< /a></code></p>
+                <p>Link do livro em <strong>PDF:</strong> <a href="exemplo/meu livro.pdf"download = "meulivro.pdf" type="aplication/pdf" > My Book</a></p>
+                <p>Posteriormente é só mudar o type para o tipo de arquivo desejado.</p>
+                
+                <p>Por exemplo: <code>< a href="exemplo/meu livro.zip" download="meu livro.zip" type="aplication/zip">My Book< /a></code></p>
+                <p>Link do livro em <strong>ZIP:</strong> <a href="exemplo/meu livro.zip" download="meu livro.zip" type="aplication/zip">My Book</a></p>
+            
+        </ul>
+        <br>
+        <li><h3>Imagens</h3></li>
+        <p>para imagens usamos a tag <code>< img src="" alt=""></code> como podemos ver essa tag fecha sozinha.</p>
+        <ul type = "square">
+            <li><h4>Imagens da web</h4></li>
+            
+            <p><code>< img src="https://st2.depositphotos.com/4164031/6914/i/450/depositphotos_69145633-stock-photo-flag-of-brazil.jpg" alt="esta é uma imagem de um olho com a bandeira do brasil"></code></p><p>O primeiro parametro é o link da imagem, e o segundo é a tag alternativa, que sera mostrado caso a imagem não seja carregada, ou caso algum leitor de tela esteja sendo usado.</p>
+            <p><img src="https://st2.depositphotos.com/4164031/6914/i/450/depositphotos_69145633-stock-photo-flag-of-brazil.jpg" alt="esta é uma imagem de um olho com a bandeira do brasil"></p>
+
+            <li><h4>Imagens locais</h4></li>
+            <p>O primeiro parametro é o caminho de onde está a imagem (Pode estar na mesma pasta ou não), e a  tag alt é caso a imagem não seja carregada.</p>
+           
+            <p><code>< img src="imagens/urus.jpg" alt="Lamborghini Urus"></code></p>   
+            <p><img src="imagens/urus.jpg" alt="Lamborghini Urus"></p>            
+        </ul>
+        <li><h3>Listas</h3></li>
+        <p>Listas podem ser ordenadas, não ordenadas, ou de definição</p>
+
+        <p>Lista ordenada</p>
+        <pre>
+            <code>  
+                < ol type="square" >
+                    < li>Item da lista ordenada.< /li>
+                < /ol>
+            </code>
+        </pre>
+
+        <p>Lista não ordenada.</p>
+        <pre>
+            <code>
+                < ul type ="circle">
+                    < li>Item da lista não ordenada< /li>
+                < /ul>
+            </code>
+        </pre>
+
+        <p>Lista de definição.</p>
+        <pre>
+            <code>
+                < dl>
+                    < dt>Termo< /dt>
+                    < dd>Descrição do termo< /dd>
+                < /dl>
+            </code>
+        </pre>  
+    </ol>
+    
+</body>
+</html>

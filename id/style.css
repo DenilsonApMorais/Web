@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+#principal{
+    text-align: center;
+}
+p{
+    text-indent: 30px;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(211, 238, 211);
+width: 800px;
+margin: auto;
+}
+.basico{
+    color: aqua;
+}
+.intermediario{
+    color: blue;
+}
+.avancado{
+    color: red;
+}

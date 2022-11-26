@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>modifique o tamanho do navegador!</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/imagem-p.png" type="image/png">  <!--Comecçemos pela menor-->
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">  <!--Não podemos ter imagens em pasta mais de um nivel longe do arquivo!-->
+        <!--Se a imagem tiver largura menor que 1050 mostra a media se for menor 750 mostra a pequena-->
+        <img src="imagens/imagem-g.png" alt="Imagem grande">  <!--Esta abre padrão -->
+    </picture>
+</body>
+</html>
